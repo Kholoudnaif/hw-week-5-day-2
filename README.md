@@ -26,15 +26,15 @@ c = a;
 ### Your solution here:
 1.  What is `a`?
 ```
-a is ...
+a is ..."bongos"
 ```
 2.  What is `b`?
 ```
-b is ...
+b is ...true
 ```
 3.  What is `c`?
 ```
-c is ...
+c is ..."bongos"
 ```
 
 ## Activity Concatenation
@@ -47,14 +47,16 @@ const thirdWord = "the";
 const fourthWord = "cheese";
 ```
 Result should be:
-```js
+```
 "Please squeeze the cheese"
 ```
 
+
 ### Your solution here:
 4.  Fill in the `console.log()`?
-```js
-console.log()
+```var fullname = firstWord+" "+secondWord+" "+thirdWord+" "+fourthWord;
+
+console.log(fullname)
 ```
 
 Output a console log `The sum of 5 and 10 is 15` where the values for 5 and 10 are saved to variables, and where 15 comes from those variables being summed.
@@ -67,39 +69,50 @@ const num2 = 10;
 5.  How can we make `num3` equal to the sum of `num1` and `num2`?
 ```js
 // your solution here
+const num1 = 5;
+const num2 = 10;
+const num3 = num1 + num2;
 ```
-6.  Use variables `num1`, `num2` and `num3` to fill in the `console.log()` to complete the sentence: 
+6.  Use variables `num1`, `num2` and `num3` to fill in the `console.log()` to complete the sentence:
 
 >The sum of 5 and 10 is 15
 
 ```js
-console.log()
+console.log("The sum of 5 and 10 is " + num3);
 ```
 
 ## Activity Comparisons
 By just looking at the following expressions, determine in your mind whether or not each will evaluate to true or false
 ```
 a) 999 > 999
-b) 999 === 999 
+b) 999 === 999
 c) 999 !== 999
 d) -5 >= -4
 e) 100 <= -100
-f) 20 + 5 < 5 
+f) 20 + 5 < 5
 g) 81 / 9 === 9
 h) 9 !== 8 + 1
 ```
 ### Your solution here:
 7.  Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a)//false
+b)//true
+c)//false
+d)//false
+e)//false
+f)//false
+g)//true
+h)//false
 ```
+console.log(999 > 999);//false
+console.log(999 === 999 );//true
+console.log(999 !== 999);//false
+console.log(-5 >= -4);//false
+console.log(100 <= -100);//false
+console.log(20 + 5 < 5 );//false
+console.log(81 / 9 === 9);//true
+console.log(9 !== 8 + 1);//false
 
 ## Activity Conditionals
 Declare a variable equal to a number 0 to 100
@@ -114,16 +127,66 @@ Write a conditional statement that...
 8.  Write your javascript solution below
 ```js
 // your answer here
+let number ;
+   for (number =0; number <= 10; number++) {
+
+   if (number % 3 ===0 && number % 5 ===0) {
+       console.log('fizzbuzz');
+         }
+     else if (number % 3 === 0) {
+       console.log('fizz');
+        }
+    else if (number % 5 === 0) {
+       console.log('buzz')
+       }
+    else {
+       console.log(number);
+   }
+}
 ```
 
 #### BONUS
 9.  Research a [loop](https://javascript.info/while-for) so that your condition runs on every number from 0 to 100
 ```js
 // your answer here
+let number ;
+   for (number =0; number <= 100; number++) {
+
+   if (number % 3 ===0 && number % 5 ===0) {
+       console.log('fizzbuzz');
+         }
+     else if (number % 3 === 0) {
+       console.log('fizz');
+        }
+    else if (number % 5 === 0) {
+       console.log('buzz')
+       }
+    else {
+       console.log(number);
+   }
+}
 ```
 10.  Research a [function](https://javascript.info/function-basics) so that your condition runs on every number from 0 to whatever number is passed into the function
 ```js
 // your answer here
+let number ;
+function printnum(x){
+   for (number =0; number <= x; number++) {
+
+   if (number % 3 ===0 && number % 5 ===0) {
+       console.log('fizzbuzz');
+         }
+     else if (number % 3 === 0) {
+       console.log('fizz');
+        }
+    else if (number % 5 === 0) {
+       console.log('buzz')
+       }
+    else {
+       console.log(number);
+}
+}
+}
 ```
 
 # Additional Resources
